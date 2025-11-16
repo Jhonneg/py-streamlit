@@ -15,7 +15,6 @@ def ask_and_get_answer(prompt, img):
 def st_image_to_pil(st_image):
     import io
     from PIL import Image
-
     image_data = st_image.read()
     pil_image = Image.open(io.BytesIO(image_data))
     return pil_image
